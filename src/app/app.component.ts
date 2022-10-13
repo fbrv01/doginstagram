@@ -25,8 +25,7 @@ export class AppComponent {
       this.apiService.getImageByBreed(breed).subscribe((res: any) => {
         this.imgUrl = res?.message;
       });
-      this.wikipediaUrl =
-        'https://en.wikipedia.org/wiki/' + breed;
+      this.wikipediaUrl = 'https://en.wikipedia.org/wiki/' + breed;
       this.breedName = breed;
     } else {
       this.imgUrl = null;
@@ -42,5 +41,4 @@ export class AppComponent {
       return [];
     }
   }
-
 }
