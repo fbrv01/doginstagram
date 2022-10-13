@@ -1,27 +1,65 @@
-# Doginstagram
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+# DogInstagram / PsIntagram
 
-## Development server
+Simple Angular application made to develop TS and Angular skills.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- App uses API https://dog.ceo/dog-api/documentation/ to get list of dogs and their photos.
+- The random photo of chosen dog is shown with generated breed wikipedia link.
 
-## Build
+## Run Locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Clone the project
 
-## Running unit tests
+```bash
+  git clone https://github.com/fbrv01/doginstagram.git
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Go to the project directory
 
-## Running end-to-end tests
+```bash
+  cd doginstagram
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Install dependencies
 
-## Further help
+```bash
+  npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Start the server
+
+```bash
+  ng serve
+```
+
+Open in your web browser
+```bash
+http://localhost:4200/
+```
+## Deployment
+
+App is deployed at [Github Pages](https://fbrv01.github.io/doginstagram/)
+
+
+## Demo
+
+![](https://github.com/fbrv01/doginstagram/blob/demo.png)
+
+
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  ng test
+```
+
+## To-do / known issues
+
+- changing event types
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/fbrv01/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/filip-bucholc/)
