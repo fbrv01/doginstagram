@@ -46,7 +46,7 @@ App is deployed at [Github Pages](https://fbrv01.github.io/doginstagram/)
 
 ## Demo
 
-![](https://github.com/fbrv01/doginstagram/blob/demo.png)
+![](https://github.com/fbrv01/doginstagram/blob/main/blob/demo.png)
 
 
 ## Running Tests
