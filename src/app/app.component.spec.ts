@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'doginstagram'`, () => {
+  it(`should have as title 'dog-breed'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('doginstagram');
+    expect(app.title).toEqual('dog-breed');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('doginstagram app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('dog-breed app is running!');
   });
 });
