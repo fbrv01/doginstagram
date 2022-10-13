@@ -28,8 +28,8 @@ export class AppComponent {
       this.apiService.getImageByBreed(breed).subscribe((res:any)=>{
         this.imgUrl=res?.message
       })
-      this.wikipediaUrl='https://en.wikipedia.org/wiki/' + breed
-      this.breedName=breed
+      this.wikipediaUrl='https://en.wikipedia.org/wiki/' + this.getFLUpperCase(breed)
+      this.breedName=this.getFLUpperCase(breed)
     }
     else {
       this.imgUrl=null
@@ -37,6 +37,7 @@ export class AppComponent {
       this.breedName=null
     }
   }
+
 
   getKeys (breeds:any) {
     if(breeds) {
@@ -46,6 +47,12 @@ export class AppComponent {
       return []
     }
 
+  }
+
+  getFLUpperCase(str:String) {
+    let strnew = str.charAt(0).toUpperCase() + str.substring(1)
+
+    return strnew
   }
 
 }

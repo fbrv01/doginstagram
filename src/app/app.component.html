@@ -1,18 +1,20 @@
 <div class="container">
+  
   <h3 class="fw-bold">PsIntagram</h3>
+
   <div class="row  mx-auto">
     <div class="col-md-3 col-sm-12 p-2">
       
       <select  (change)="selectDog($event)">
         <option [value]=""> --- wybierz rasę --- </option> 
-        <option *ngFor="let item of getKeys(breeds)" [value]="item">{{item}}</option>
+        <option *ngFor="let item of getKeys(breeds)" [value]="item">{{getFLUpperCase(item)}}</option>
       </select>
 
     </div>
     <div *ngIf="imgUrl"  class="col-md-3  col-sm-12 p-2 ">
       <img *ngIf="imgUrl"    [src]="imgUrl" alt="">
       Poczytaj więcej o tej rasie na wikipedii:
-      <a  target="_blank" [href]="wikipediaUrl">{{breedName}}</a>
+      <a  target="_blank" [href]="wikipediaUrl">{{getFLUpperCase(breedName)}}</a>
     </div>
 
   </div>
