@@ -7,7 +7,7 @@ import { ApiService } from './api.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'dog-breed';
+  title = 'PsIntagram';
   imgUrl:any
   wikipediaUrl:any
   breeds:any

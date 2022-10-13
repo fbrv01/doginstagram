@@ -6,13 +6,14 @@
     <div class="col-md-3 col-sm-12 p-2">
 
       <select  (change)="selectDog($event)">
-        <option [value]=""> Select Breed </option>
+        <option [value]=""> --- wybierz rasę --- </option> 
         <option *ngFor="let item of getKeys(breeds)" [value]="item">{{item}}</option>
       </select>
 
     </div>
     <div *ngIf="imgUrl"  class="col-md-3  col-sm-12 p-2 ">
       <img *ngIf="imgUrl"    [src]="imgUrl" alt="">
+      Poczytaj więcej o tej rasie na wikipedii:
       <a  target="_blank" [href]="wikipediaUrl">{{breedName}}</a>
     </div>
 
