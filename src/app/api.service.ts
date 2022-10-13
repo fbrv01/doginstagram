@@ -11,7 +11,7 @@ export class ApiService {
     return this.http.get('https://dog.ceo/api/breeds/list/all');
   }
 
-  getImageByBreed(breed: any) {
+  getImageByBreed(breed: string) {
     return this.http.get(`https://dog.ceo/api/breed/${breed}/images/random`);
   }
 }
